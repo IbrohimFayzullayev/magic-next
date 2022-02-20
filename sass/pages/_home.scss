@@ -1,0 +1,84 @@
+.project {
+  display: flex;
+}
+.section__hero {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.hero {
+  background-color: $color-secondary;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(15px);
+  background-image: url(../../img/hero.jpeg);
+  padding: 4rem;
+  &__logo {
+    display: grid;
+    justify-content: center;
+    img {
+      width: 15rem;
+    }
+  }
+  &__info {
+    margin: 3rem;
+    &--title {
+      margin: 3rem 0;
+      font-size: 3.2rem;
+      color: $color-white;
+    }
+  }
+  &__comp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 0.1rem solid $color-white;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    img {
+      width: 15rem;
+    }
+  }
+}
+.realtors {
+  background-color: $color-secondary;
+}
+.realtor {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 2rem;
+  &__title {
+    margin-top: 5rem;
+  }
+  &__person {
+    display: grid;
+    grid-template-columns: 1fr 3.6fr;
+    align-items: center;
+    column-gap: 1rem;
+    &--img {
+      width: 7rem;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    &--info {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 0.6rem;
+    }
+    &--name {
+      font-size: 1.6rem;
+      color: $color-white;
+    }
+    &--text {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #666;
+    }
+  }
+}

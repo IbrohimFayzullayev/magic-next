@@ -1,0 +1,24 @@
+.menu {
+  width: 4%;
+  height: 100vh;
+  background-color: $color-primary;
+  &__line {
+    margin: 2rem auto;
+    width: 60%;
+    height: 0.2rem;
+    background-color: $color-white;
+    &::after,
+    &::before {
+      content: "";
+      width: 80%;
+      height: 0.2rem;
+      background-color: $color-white;
+    }
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+    }
+  }
+}

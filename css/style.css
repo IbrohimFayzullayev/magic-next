@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif; }
+
+.text-center {
+  text-align: center; }
+
+.subheading {
+  text-transform: uppercase;
+  color: #c69963;
+  font-size: 2rem; }
+
+.btn__primary {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #c69963;
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase; }
+
+.menu {
+  width: 4%;
+  height: 100vh;
+  background-color: #c69963; }
+  .menu__line {
+    margin: 2rem auto;
+    width: 60%;
+    height: 0.2rem;
+    background-color: #fff; }
+    .menu__line::after, .menu__line::before {
+      content: "";
+      width: 80%;
+      height: 0.2rem;
+      background-color: #fff; }
+    .menu__line::before {
+      top: -1rem; }
+    .menu__line::after {
+      top: 1rem; }
+
+.project {
+  display: flex; }
+
+.section__hero {
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+
+.hero {
+  background-color: #101d2c;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(15px);
+  background-image: url(../../img/hero.jpeg);
+  padding: 4rem; }
+  .hero__logo {
+    display: grid;
+    justify-content: center; }
+    .hero__logo img {
+      width: 15rem; }
+  .hero__info {
+    margin: 3rem; }
+    .hero__info--title {
+      margin: 3rem 0;
+      font-size: 3.2rem;
+      color: #fff; }
+  .hero__comp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 0.1rem solid #fff;
+    margin-left: 3rem;
+    margin-top: 3rem; }
+    .hero__comp img {
+      width: 15rem; }
+
+.realtors {
+  background-color: #101d2c; }
+
+.realtor {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 2rem; }
+  .realtor__title {
+    margin-top: 5rem; }
+  .realtor__person {
+    display: grid;
+    grid-template-columns: 1fr 3.6fr;
+    align-items: center;
+    column-gap: 1rem; }
+    .realtor__person--img {
+      width: 7rem;
+      border-radius: 50%; }
+      .realtor__person--img img {
+        width: 100%;
+        border-radius: 50%; }
+    .realtor__person--info {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 0.6rem; }
+    .realtor__person--name {
+      font-size: 1.6rem;
+      color: #fff; }
+    .realtor__person--text {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #666; }

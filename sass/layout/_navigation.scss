@@ -1,16 +1,26 @@
 .menu {
-  width: 4%;
+  width: 5%;
   height: calc();
   background-color: $color-primary;
+  @include respons(tab-land) {
+    width: 100vw;
+    height: 4rem;
+  }
   &__line {
     margin: 2rem auto;
-    width: 60%;
+    width: 3rem;
     height: 0.2rem;
     background-color: $color-white;
+    position: relative;
+    @include respons(tab-land) {
+      position: absolute;
+      right: 2rem;
+    }
     &::after,
     &::before {
       content: "";
-      width: 80%;
+      width: 100%;
+      position: absolute;
       height: 0.2rem;
       background-color: $color-white;
     }

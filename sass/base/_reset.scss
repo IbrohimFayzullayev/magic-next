@@ -5,6 +5,9 @@
 }
 html {
   font-size: 62.5%;
+  @include respons(tab-land) {
+    font-size: 56.25%;
+  }
 }
 body {
   font-family: sans-serif;

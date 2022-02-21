@@ -6,6 +6,15 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
+    @include respons(tab-land) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @include respons(tab-port) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include respons(phone) {
+      grid-template-columns: repeat(3, 1fr);
+    }
     a {
       text-decoration: none;
       font-size: 1.6rem;
@@ -27,5 +36,6 @@
     font-size: 1.6rem;
     text-align: center;
     color: #777;
+    line-height: 1.6;
   }
 }
